@@ -1,0 +1,73 @@
+.contenedor {
+  background-color: aquamarine;
+  border: 2px solid #f08080;
+  max-width:fit-content;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: 
+    ". head head"
+    'mid mid .'
+    '. fot1 fot2';
+  place-content: center;
+}
+
+/* CON COLUM Y ROW ESTAR Y END */
+/* .item1 {
+  background-color: rgb(219, 181, 255);
+  border: 3px solid rgb(199, 199, 255);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.item2 {
+  background-color: rgb(200, 142, 255);
+  border: 3px solid rgb(112, 112, 255);
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.item3 {
+  background-color: rgb(219, 181, 255);
+  border: 3px solid rgb(199, 199, 255);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.item4 {
+  background-color: rgb(200, 142, 255);
+  border: 3px solid rgb(112, 112, 255);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+} */
+
+/* CON GRID AREA */
+
+.item1 {
+  background-color: rgb(219, 181, 255);
+  border: 3px solid rgb(52, 52, 255);
+  grid-area: head;
+}
+.item2 {
+  background-color: rgb(200, 142, 255);
+  border: 3px solid rgb(112, 112, 255);
+  grid-area: mid;
+
+}
+.item3 {
+  background-color: rgb(219, 181, 255);
+  border: 3px solid rgb(52, 52, 255);
+  grid-area: fot1;
+
+}
+.item4 {
+  background-color: rgb(200, 142, 255);
+  border: 3px solid rgb(112, 112, 255);
+  grid-area: fot2;
+}

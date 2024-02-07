@@ -1,0 +1,18 @@
+.contenedor {
+  background-color: rgb(176, 252, 226);
+  border: 5px solid rgb(255, 126, 255);
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-auto-rows: 100px;
+  gap: 15px;
+  place-content: center;
+  place-items: center;
+}
+
+.item {
+  background-color: antiquewhite;
+  border: 3px solid brown;
+  font-size: 2rem;
+  /* place-self: end; */
+}
